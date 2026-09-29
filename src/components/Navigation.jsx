@@ -59,9 +59,9 @@ export default function Navigation() {
                 <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-cyan-600 group-hover:w-full transition-all duration-300" />
               </a>
             ))}
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener noreferrer"
               className="px-5 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700 transition-colors font-medium">Resume</a>
-            <a href="/cover-letter.pdf" target="_blank" rel="noopener noreferrer"
+            <a href={`${import.meta.env.BASE_URL}cover-letter.pdf`} target="_blank" rel="noopener noreferrer"
               className="px-5 py-2 border-2 border-cyan-600 text-cyan-600 rounded-lg hover:bg-cyan-50 transition-colors font-medium">Cover Letter</a>
           </div>
 
@@ -86,9 +86,9 @@ export default function Navigation() {
                   initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }}
                   className="text-2xl font-semibold text-slate-900 hover:text-cyan-600">{l.label}</motion.a>
               ))}
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+              <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener noreferrer"
                 className="px-8 py-3 bg-cyan-600 text-white rounded-lg font-medium text-lg">Resume</a>
-              <a href="/cover-letter.pdf" target="_blank" rel="noopener noreferrer"
+              <a href={`${import.meta.env.BASE_URL}cover-letter.pdf`} target="_blank" rel="noopener noreferrer"
                 className="px-8 py-3 border-2 border-cyan-600 text-cyan-600 rounded-lg font-medium text-lg">Cover Letter</a>
             </div>
           </motion.div>

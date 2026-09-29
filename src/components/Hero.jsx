@@ -48,8 +48,8 @@ export default function Hero() {
 
             <motion.div {...fade(0.5)} className="flex flex-wrap gap-4">
               <Button onClick={toProjects}>View Projects</Button>
-              <Button variant="outline" href="/resume.pdf">Resume</Button>
-              <Button variant="outline" href="/cover-letter.pdf">Cover Letter</Button>
+              <Button variant="outline" href={`${import.meta.env.BASE_URL}resume.pdf`}>Resume</Button>
+              <Button variant="outline" href={`${import.meta.env.BASE_URL}cover-letter.pdf`}>Cover Letter</Button>
             </motion.div>
 
             <motion.div {...fade(0.6)} className="flex gap-4">
@@ -66,7 +66,7 @@ export default function Hero() {
             <div className="relative w-full max-w-md mx-auto">
               <div className="absolute -inset-4 bg-gradient-to-br from-cyan-400 via-cyan-500 to-orange-400 rounded-3xl blur-2xl opacity-20" />
               <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-100">
-                <img src="/sakshi-photo.jpg" alt={profile.name} className="w-full h-auto object-cover" />
+                <img src={`${import.meta.env.BASE_URL}sakshi-photo.jpg`} alt={profile.name} className="w-full h-auto object-cover" />
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2, duration: 0.6 }}
